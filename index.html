@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyoka Suigetsu | Tech Growth & AI Agents</title>
+    <meta name="description"
+        content="Real Time problem solving with AI Agents, Blockchain and common sense. Tech Growth advising for Developer Adoption.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@300;400;600;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="background-elements">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="glow glow-3"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <nav class="navbar reveal-nav">
+        <div class="container nav-container">
+            <button id="sakura-btn" class="logo-btn" aria-label="Sakura Animation">
+                <svg viewBox="0 0 24 24" class="sakura-icon" fill="currentColor">
+                    <path d="M12,2 C10,2 7,8 7,12 C7,16 12,22 12,22 C12,22 17,16 17,12 C17,8 14,2 12,2 Z" />
+                </svg>
+            </button>
+            <div class="nav-actions" style="display: flex; align-items: center; gap: 1rem;">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" style="display:none; width: 20px; height: 20px;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <a href="https://x.com/adidshaft" target="_blank" rel="noopener noreferrer" class="social-btn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="x-icon">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 22.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                        </path>
+                    </svg>
+                    <span class="btn-text">Connect</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section container">
+            <div class="hero-content reveal-on-scroll"
+                style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <h1 class="hero-title gradient-text"
+                    style="font-size: clamp(3rem, 10vw, 7rem); letter-spacing: -0.06em; margin-bottom: 2rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                    Kyoka Suigetsu
+                    <span id="hero-sakura-btn"
+                        style="cursor: pointer; display: inline-flex; transition: transform 0.3s ease; color: #ffb7c5;"
+                        onmouseover="this.style.transform='scale(1.2) rotate(15deg)'"
+                        onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                        <svg viewBox="0 0 24 24" width="0.6em" height="0.6em" fill="currentColor">
+                            <path d="M12,2 C10,2 7,8 7,12 C7,16 12,22 12,22 C12,22 17,16 17,12 C17,8 14,2 12,2 Z" />
+                        </svg>
+                    </span>
+                </h1>
+
+                <div
+                    style="font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; color: var(--text-primary); margin-bottom: 3.5rem;">
+                    <span style="color: var(--text-secondary); font-size: 0.7rem;">[ BY ]</span><br>
+                    <a href="https://x.com/adidshaft" target="_blank" rel="noopener noreferrer"
+                        style="color: inherit; text-decoration: none; display: inline-block; margin-top: 0.5rem; transition: opacity 0.3s;"
+                        onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">@ADIDSHAFT</a>
+                </div>
+
+                <p class="hero-subtitle"
+                    style="max-width: 800px; margin: 0 auto; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; line-height: 1.6; font-weight: 600; color: var(--text-primary);">
+                    ↗ WHERE ALGORITHMIC PRECISION MEETS PRACTICAL INTUITION<br>
+                    <span style="color: var(--text-secondary); font-weight: 500;">IN REAL TIME WITH AI AGENTS,
+                        BLOCKCHAIN AND COMMON SENSE</span>
+                </p>
+            </div>
+        </section>
+
+        <section class="products-section container reveal-on-scroll">
+            <h2 class="section-title">Products In The Making</h2>
+            <div class="products-grid">
+                <div class="product-card" id="alter-card">
+                    <div class="card-content">
+                        <div class="product-icon-wrapper">
+                            <img src="images/alter_app_icon.png" alt="Alter App Icon" class="product-icon"
+                                id="alter-icon"
+                                onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\' viewBox=\'0 0 100 100\'%3E%3Crect width=\'100\' height=\'100\' fill=\'%23333\'/%3E%3Ctext x=\'50\' y=\'50\' font-family=\'Arial\' font-size=\'14\' fill=\'white\' text-anchor=\'middle\' dy=\'.3em\'%3EAlter App%3C/text%3E%3C/svg%3E';">
+                        </div>
+                        <h3 class="product-name">Alter</h3>
+                        <p class="product-desc">The AI Agents that find your match.</p>
+                        <div class="product-tags">
+                            <span class="tag">AI Agent</span>
+                            <span class="tag">Dating</span>
+                            <span class="tag">Human Compatibility</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container reveal-on-scroll">
+        <div class="footer-content"
+            style="flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; text-align: center;">
+            <div class="footer-brand" style="font-size: 1.5rem; letter-spacing: -0.04em;">Kyoka Suigetsu</div>
+            <div
+                style="font-size: 0.8rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; margin-top: 0.5rem;">
+                <a href="https://x.com/adidshaft" target="_blank" rel="noopener noreferrer"
+                    style="color: var(--text-secondary); text-decoration: none; transition: color 0.3s;"
+                    onmouseover="this.style.color='var(--text-primary)'"
+                    onmouseout="this.style.color='var(--text-secondary)'">↗ CONNECT ON X</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="sakura-container"></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
