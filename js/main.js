@@ -33,19 +33,14 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector('.reveal-nav')?.classList.add('visible');
     }, 100);
 
-    // 3. Magnetic / Tilt effect for Product Card
-    const card = document.getElementById('alter-card');
-    const glow = document.getElementById('alter-glow');
+    // 3. Magnetic / Tilt effect for Product Cards
+    const productCards = document.querySelectorAll('.product-card');
 
-    if (card && glow) {
+    productCards.forEach(card => {
         card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left;
             const y = e.clientY - rect.top;
-
-            // Move the glow to follow the cursor within the card
-            glow.style.left = `${x - 125}px`; // 125 is half the glow width
-            glow.style.top = `${y - 125}px`;
 
             // Calculate tilt
             const centerX = rect.width / 2;
@@ -60,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         card.addEventListener('mouseleave', () => {
             card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
         });
-    }
+    });
 
     // 4. Theme Toggle
     const themeBtn = document.getElementById('theme-toggle');
