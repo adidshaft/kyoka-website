@@ -360,37 +360,6 @@ h6 {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 
-.product-monogram {
-    color: #ffffff;
-    font-size: 2.4rem;
-    font-weight: 800;
-    letter-spacing: 0;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    border: 1px solid var(--border-color);
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s;
-}
-
-.product-card:hover .product-monogram {
-    transform: scale(1.03);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-}
-
-.product-monogram-atria {
-    background: linear-gradient(135deg, #16213e 0%, #4f8f9f 100%);
-}
-
-.product-monogram-cribble {
-    background: linear-gradient(135deg, #25312f 0%, #87a96b 100%);
-}
-
-.product-monogram-fizz {
-    background: linear-gradient(135deg, #ff4d6d 0%, #ffb703 100%);
-}
-
-.product-monogram-ross {
-    background: linear-gradient(135deg, #202124 0%, #8a817c 100%);
-}
-
 .product-name {
     font-size: 2rem;
     font-weight: 700;
