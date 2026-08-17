@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Atria Privacy Policy</title>
-  <meta name="description" content="How the local-first Atria iPhone app handles strap, health, fitness and journal data.">
+  <meta name="description" content="How the local-first Atria iPhone app handles strap, health, fitness and journal data, including optional anonymous research sharing.">
   <meta name="theme-color" content="#05090c">
   <link rel="canonical" href="https://atria.kyokasuigetsu.xyz/privacy/">
   <link rel="icon" href="/assets/atria-icon.png" type="image/png">
@@ -27,8 +27,8 @@
     <header class="legal-hero reveal">
       <p class="eyebrow"><span class="status-dot"></span>Privacy policy</p>
       <h1>Your health data stays yours.</h1>
-      <p class="lede">Atria is designed to work locally on your iPhone. It does not require an Atria account or send your strap and health data to an Atria backend.</p>
-      <p class="legal-meta">Effective August 14, 2026 · Atria 1.0</p>
+      <p class="lede">Atria is designed to work locally on your iPhone. It does not require an Atria account or a cloud login. Sharing any recording with the developer is optional, off by default, and inspectable before you agree.</p>
+      <p class="legal-meta">Effective August 17, 2026 · Atria 1.0</p>
     </header>
 
     <div class="legal-layout">
@@ -36,6 +36,7 @@
         <a href="#summary">Summary</a>
         <a href="#data">Data on your device</a>
         <a href="#collection">Collection and sharing</a>
+        <a href="#research">Anonymous research</a>
         <a href="#permissions">Apple permissions</a>
         <a href="#control">Your control</a>
         <a href="#contact">Contact</a>
@@ -44,8 +45,8 @@
       <article class="legal-content reveal">
         <section class="legal-section" id="summary">
           <h2>Summary</h2>
-          <p class="notice"><strong>Atria does not collect, sell or share your personal health and fitness data.</strong> The app has no Atria account, cloud database, advertising SDK or third-party analytics tracker.</p>
-          <p>This policy describes the information Atria processes locally, the iOS permissions it may request and the actions that can move data outside the app at your direction.</p>
+          <p class="notice"><strong>By default, Atria does not collect, sell or share your personal health and fitness data.</strong> The app has no Atria account, cloud database, advertising SDK or third-party analytics tracker. The only developer-facing exception is optional anonymous research sharing, which stays off until you inspect a real bundle and explicitly agree.</p>
+          <p>This policy describes the information Atria processes locally, the iOS permissions it may request, the optional research bundle, and the other actions that can move data outside the app at your direction.</p>
         </section>
 
         <section class="legal-section" id="data">
@@ -63,9 +64,22 @@
         </section>
 
         <section class="legal-section" id="collection">
-          <h2>No developer collection, advertising or tracking</h2>
-          <p>Atria does not operate a backend service for the app. It does not upload your profile, strap readings, metrics, journal entries or diagnostics to the developer. It does not sell data, build advertising profiles, use cross-app tracking or include advertising.</p>
+          <h2>No account, advertising or tracking</h2>
+          <p>Atria does not require an account and does not operate a user-facing backend for your history. It does not sell data, build advertising profiles, use cross-app tracking or include advertising. Unless you turn on anonymous research sharing, Atria does not upload your profile, strap readings, metrics, journal entries or diagnostics to the developer.</p>
           <p>The App Store and iOS may process purchase, installation and system diagnostic information under Apple's own policies. Atria does not receive your payment-card details.</p>
+        </section>
+
+        <section class="legal-section" id="research">
+          <h2>Optional anonymous research sharing</h2>
+          <p>In Settings you can choose <strong>Share anonymously with developers</strong>. This is a gift, not a requirement. Every Atria feature works the same if you leave it off.</p>
+          <p>The Agree control stays locked until you open the in-app inspector and review a real bundle that would leave the phone. That preview shows the compressed size, a digest, and a sample of the allowlisted fields.</p>
+          <h3>What can be shared</h3>
+          <p>The bundle is built from an explicit allowlist. It may include heart-rate and heart-rate-variability series, sleep summaries, user-confirmed activity type, timestamp-shifted motion features, daily scores, journal answers stored as structured values, and coarse bands for age, weight, height and sex.</p>
+          <h3>What is never shared</h3>
+          <p>The bundle never includes your name, email, device or strap names, exact birth date, exact weight or height, location, timezone, or free-text you type. Absolute calendar dates are replaced with seconds and day indexes relative to the first day in the bundle. You are identified only by a random pseudonym with no connection to your Apple ID or device identifier.</p>
+          <h3>When a daily copy is prepared</h3>
+          <p>If sharing is on, Atria prepares at most one anonymous daily bundle after your chosen local clock time. The default is 3:00 AM. You can change the hour and minute in Settings. Turning sharing off destroys the pseudonym, so later shares cannot be linked to earlier ones. Heart-rate patterns can still be unique to you even after identifiers are stripped; the consent sheet states that honestly.</p>
+          <p>Opted-in bundles are stored by the developer only to improve Atria's recovery, sleep and strain algorithms. They are not sold, used for advertising, or joined to an identity file.</p>
         </section>
 
         <section class="legal-section" id="permissions">
@@ -80,7 +94,7 @@
 
         <section class="legal-section" id="control">
           <h2>Exports, deletion and your control</h2>
-          <p>Data can leave Atria only when you take an action that uses another app or service—for example, exporting a backup, sharing a file, writing an authorized item to Apple Health or including information in a support message. Once shared, that destination's privacy policy applies.</p>
+          <p>Data can leave Atria when you take an action that uses another app or service—for example, exporting a backup, sharing a file, writing an authorized item to Apple Health or including information in a support message. If you have opted into anonymous research sharing, a date-shifted research bundle can also be prepared for the developer on the daily schedule you set. Once shared, that destination's privacy policy applies.</p>
           <p>You can remove Atria's local data using controls available in the app or by deleting the app from your iPhone. Deleting the app does not remove copies you previously exported or information managed independently by Apple.</p>
         </section>
 
@@ -92,7 +106,7 @@
 
         <section class="legal-section" id="changes">
           <h2>Changes to this policy</h2>
-          <p>If Atria's data practices change, this policy and its effective date will be updated. A material change that introduces developer collection would also be reflected in the App Store privacy disclosure before that version is released.</p>
+          <p>If Atria's data practices change, this policy and its effective date will be updated. Optional anonymous research sharing is such a change: it is described here and should be reflected in the App Store privacy disclosure for any version that offers it.</p>
         </section>
 
         <section class="legal-section" id="contact">

@@ -20,7 +20,7 @@ Atria is a private, local-first companion for a compatible strap. It connects di
 
 NO ATRIA ACCOUNT OR CLOUD
 
-Atria processes and stores your health and fitness history on your iPhone. There is no Atria login, backend profile, advertising SDK or analytics tracker.
+Atria processes and stores your health and fitness history on your iPhone. There is no Atria login, backend profile, advertising SDK or analytics tracker. Optional anonymous research sharing stays off until you inspect the bundle and agree.
 
 ONE PURCHASE, NOT ANOTHER SUBSCRIPTION
 
